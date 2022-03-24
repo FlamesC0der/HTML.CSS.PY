@@ -1,0 +1,134 @@
+//шрифты
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+// файл обнуляющих стлилей
+@import "nullstyle.scss";
+
+// Переменные для блоков
+$fz1:100px;
+$color1: #000;
+$color2: #fff;
+
+// Шаблоны
+
+
+// "Функции"
+
+
+// Оформление
+body{
+    font-family: Lato;
+}
+.titleP {
+    background: url("../img/slider/sliderBg.png") 0 0/100% auto no-repeat;
+    max-width: 2300px;
+    min-width: 800px;
+    min-height: 600px;
+    margin: 0px auto;
+    &__buttonBlock{
+        position: relative;
+        border: 2px solid #868585;
+        margin: 0px auto;
+        max-width: 150px;
+        text-align: center;
+        font-size: 25px;
+    }
+    &__button{
+        margin: auto auto;
+        position: relative;
+        height: 100px;
+    }
+}
+.menu {
+    max-width: 600px;
+    background-color: #f1f1f1;
+    margin: auto auto;
+    display: flex;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    &__button {
+        flex: 0 0 25%;
+    }
+}
+.active{
+    color: rgb(173, 160, 116);
+}
+.about {
+    &__body {
+        max-width: 823px;
+        margin: auto auto;
+    }
+    &__header {
+        margin: 0px 0px 65px 0px;
+    }
+    &__title {
+        margin: 0px 0px 30px 0px;
+    }
+    &__text {
+        max-width: 688px;
+        color: #868585;
+        font-size: 14px;
+        font-weight: 300;
+        text-align: center;
+        line-height: 25.89px;
+        margin: 0px auto;
+    }
+    &__row {
+        display: flex;
+        font-size: 0;
+        margin: 0px -15px;
+    }
+    &__column {
+        flex: 0 0 33.333%;
+    }
+}
+.title {
+    font-size: 34px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 8.95px;
+    position: relative;
+    text-align: center;
+    padding: 0px 0px 30px 0px;
+    &:after{
+        content: '';
+        position: absolute;
+        width: 50px;
+        bottom: 0;
+        height: 1px;
+        left: 50%;
+        background-color: #000;
+        margin: 0px 0px 0px -25px;
+    }
+}
+.item-about {
+    &__icon {
+        margin: 0px auto 40px auto;
+        border-radius: 50%;
+        width: 92px;
+        height: 92px;
+        border: 2px solid #f1f1f1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__title {
+        text-align: center;
+        color: #000000;
+        font-size: 22px;
+        text-transform: uppercase;
+        letter-spacing: 3.52px;
+        margin: 0px 0px 35px 0px;
+    }
+    &__text {
+        max-width: 183px;
+        max-height: 66px;
+        color: #868585;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 26px;
+        margin: 0px auto;
+    }
+}
