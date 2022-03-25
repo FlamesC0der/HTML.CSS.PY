@@ -1,13 +1,11 @@
 //шрифты
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+//p.s сделать самому без гайда --------------------------------------------------------------------------------------------------------------------------------
 
 // файл обнуляющих стлилей
 @import "nullstyle.scss";
 
 // Переменные для блоков
-$fz1:100px;
-$color1: #000;
-$color2: #fff;
+
 
 // Шаблоны
 
@@ -18,55 +16,200 @@ $color2: #fff;
 // Оформление
 body{
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    padding: 0px 30px 0px 0px;
 }
-.wrapper{
-    height: 100%;
-    overflow: hidden;
+.wrapper {
     min-height: 100%;
-    padding: 50px;
-}
-.block{
+    overflow: hidden;
 
-}
-.block__row{
     display: flex;
-    border: 20px solid #ece89d;
-    margin: 0px 0px 20px 0px;
-
-    flex-direction: column-reverse;
-    //align-items: flex-end;
-
-    height: 700px;
+    flex-direction: column;
 }
-.block__column{
-    border: 20px solid #5e5373;
+.container {
+    max-width: 1180px;
+    margin: 0px auto;
 }
-.block_column_1{}
-.block_column_2{flex: 1 1 auto;}
-.block_column_3{}
-.block__item{
-    background-color: #18b5a4;
-    padding: 20px 50px;
-    font-size: 50px;
-    color: #fff;
-    font-weight: 700;
-    text-align: center;
+.content {
+    flex: 1 1 auto;
 }
-.block__list{
-    display: flex;
-    align-items: center;
-    li{margin: 0px 15px 0px 0px;
-        &:last-child{margin: 0px 0px 0px 0px;}
+.hi {
+    background-color: #445162;
+    padding: 50px 0;
+	&__row {
+        display: flex;
+        justify-content: space-between;
+    }
+	&__body {
+        color: #fff;
+    }
+	&__title {
+        text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+        font-size: 60px;
+        margin: 0px 0px 38px 0px;
+    }
+	&__list {
+        li{
+            background: url('../img/icons/icon.png') 0 1px no-repeat;
+            text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+            font-size: 20px;
+            line-height: 22px;
+            padding: 0px 0px 0px 36px;
+            margin: 0px 0px 17px 0px;
+            :last-child{
+                margin: 0;
+            }
+        }
     }
 }
-.block__info{
-    position: relative;
-    padding: 0px 0px 0px 25px;
-    line-height: 15px;
-    &:before{
-        content: '';
-        width: 15px;
-        height: 15px;
-        position: absolute;
+.title {
+    color: #445162;
+    font-size: 30px;
+    line-height: 36px;
+}
+.what {
+    padding: 50px 0px;
+    &__row {
+        display: flex;
+    }
+    &__image {
+        flex: 0 0 430px;
+        img{
+            max-width: 100%;
+        }
+    }
+    &__body {
+        flex: 1 1 auto;
+        padding: 0px 0px 0px 38px;
+    }
+    &__title {
+        margin: 0px 0px 33px 0px;
+    }
+    &__text {
+        p{
+            margin: 0px 0px 25px 0px;
+            color: #333333;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+}
+.columns {
+    background-color: #f5f5f5;
+    padding: 50px 0px 20px 0px;
+    &__title {
+        text-align: center;
+        margin: 0px 0px 30px 0px;
+    }
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px -8px;
+    }
+    &__column {
+        padding: 0px 8px;
+        flex: 0 1 50%;
+        margin: 0px 0px 30px 0px;
+    }
+}
+.item {
+    &__row {
+        display: flex;
+    }
+    &__image {
+        flex: 0 0 200px;
+    }
+    &__body {
+        flex: 1 1 auto;
+        padding: 0px 0px 0px 15px;
+    }
+    &__title {
+        color: #445161;
+        font-size: 24px;
+        line-height: 30px;
+        margin: 0px 0px 13px 0px;
+    }
+    &__text {
+        color: #333333;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+.vertical {
+    padding: 50px 0px;
+    &_title {
+        text-align: center;
+        margin: 0px 0px 30px 0px;
+    }
+    &__body {
+        max-width: 990px;
+        margin: 0px auto;
+    }
+    &__row {
+        display: flex;
+        margin: 0px -22.5px;
+    }
+    &__column {
+        padding: 0px 22.5px;
+        flex: 0 1 33.333%;
+        display: flex;
+    }
+    &__item {
+        background-color: #445162;
+        color: #fff;
+        padding: 0px 0px 20px 0px;
+        border-radius: 5px;
+        border: 1px solid #445162;
+        display: flex;
+        flex-direction: column;
+    }
+    &__subtitle {
+        font-size: 24px;
+        text-transform: uppercase;
+        padding: 12px 0px;
+        text-align: center;
+    }
+    &__label {
+        background-color: #fff;
+        text-align: center;
+        color: #445162;
+        padding: 15px 0px;
+        font-size: 40px;
+    }
+    &__text {
+        padding: 20px;
+        font-size: 14px;
+        line-height: 24px;
+        flex: 1 1 auto;
+        p{
+            margin: 0px 0px 15px 0px;
+            :last-child{
+                margin: 0;
+            }
+        }
+    }
+    &__btn {
+        display: block;
+        margin: 0px 20px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 5px;
+        font-size: 18px;
+        background-color: #fff;
+    }
+}
+.footer {
+    border-color: #f5f5f5;
+	&__row {
+        display: flex;
+        height: 65px;
+        justify-content: center;
+        align-items: center;
+    }
+	&__text {
+        color: #445162;
+        font-size: 12px;
+        letter-spacing: 0.3px;
+        font-weight: 400;
     }
 }
