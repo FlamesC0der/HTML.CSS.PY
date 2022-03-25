@@ -1,0 +1,84 @@
+//шрифты
+//p.s сделать самому без гайда --------------------------------------------------------------------------------------------------------------------------------
+
+// файл обнуляющих стлилей
+@import "nullstyle.scss";
+
+// Переменные для блоков
+
+
+// Шаблоны
+
+
+// "Функции"
+
+
+// Оформление
+body{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    padding: 0px 30px 0px 0px;
+}
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    max-width: 1180px;
+    margin: 0px auto;
+    background-color: #445162;
+}
+.content {
+    flex: 1 1 auto;
+}
+.header {
+    background-color: #445162;
+	&__row {
+        background-color: #f5f5f5;
+        display: flex;
+        justify-content: space-between;
+        a{
+            img{
+                height: 25px;
+                width: 25px;
+            }
+        }
+    }
+	&__icon {
+        flex: 0 0 50px;
+        img{
+            max-width: 50%;
+        }
+    }
+}
+.content {
+    &__row {
+        display: flex;
+        flex: 1 1 auto;
+        padding: 20px 0px 0px 38px;
+        &_1 {}
+        &_2 {}
+        &_3 {}
+    }
+    &__column{
+        display: flex;
+        padding: 50px 80px;
+    }
+}
+.footer {
+    border-color: #f5f5f5;
+	&__row {
+        display: flex;
+        height: 65px;
+        justify-content: center;
+        align-items: center;
+    }
+	&__text {
+        color: #445162;
+        font-size: 12px;
+        letter-spacing: 0.3px;
+        font-weight: 400;
+    }
+}
