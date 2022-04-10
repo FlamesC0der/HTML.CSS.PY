@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+body{
+  background-color: rgb(41, 41, 41);
+  color: white;
+}
+.wrapper{
+  padding: 100px;
+}
+h1,h2,h3{
+  font-size: 40px;
+  padding: 50px 0px;
+}
+.grid__body{
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(3, 1fr)
+  /*
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  */
+}
+.grid__item{
+  text-align: center;
+  border: 2px dashed rgba(255,255,255,0.2);
+  padding: 30px;
+  font-size: 30px;
+}
+
+/* Имена областей*/
+
+.grid-wrapper {
+  display: grid;
+
+  grid-template:
+    [start] "header header" 100px [row2]
+    [row2] "side content" 1fr [row-end] / 150px 1fr;
+  /*
+  grid-template-columns: 150px 1fr;
+  grid-template-rows: 100px 1fr;
+  grid-template-areas:
+    "header header"
+    "side content";
+  */
+}
+.grid-header,
+.grid-side,
+.grid-content {
+  padding: 30px;
+  border: 2px dashed rgba(255,255,255,0.2);
+  margin: 0px 0px 15px 0px;
+}
+.grid-header {
+  grid-area: header;
+}
+.grid-side {
+  grid-area: side;
+}
+.grid-content {
+  grid-area: content;
+}
+
+/* Неявная сетка */
+
+.grid-auto{
+  display: grid;
+  grid-template: 1fr 1fr / repeat(3, 1fr);
+  grid-auto-rows: 200px;
+}
+.grid-auto__item{
+  text-align: center;
+  border: 2px dashed rgba(255,255,255,0.2);
+  padding: 30px;
+  font-size: 30px;
+}
