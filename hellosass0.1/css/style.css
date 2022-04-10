@@ -1,0 +1,170 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+  font-size: 16px;
+  background: #1b1b1b;
+  color: white;
+}
+
+.footer {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  background-color: #1f1f1f;
+}
+.footer div {
+  font-size: 18px;
+  display: inline-block;
+  width: 9.2%;
+  height: 100%;
+  text-align: center;
+  line-height: 50px;
+}
+.footer div:hover {
+  border-bottom: 2px solid white;
+}
+.footer div a {
+  color: white;
+}
+.footer .form.form {
+  width: 500px;
+}
+.footer .form.form .search {
+  display: block;
+  border-radius: 5px;
+  height: 25px;
+  width: 500px;
+}
+.footer .icon {
+  width: 7%;
+}
+.footer .username::before {
+  content: "";
+  background: url("https://tr.rbxcdn.com/d64969f392d56c8a5e7b6d78f874d0d3/150/150/AvatarHeadshot/Png") 0 0 no-repeat;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 20px;
+  left: 1000px;
+  display: block;
+  border-radius: 50%;
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+}
+.page .gmpf {
+  width: 65%;
+  height: 100%;
+  margin: 0px auto 0px;
+}
+.page .profile {
+  width: 100%;
+  height: 25%;
+}
+.page .profile .headphoto {
+  display: block;
+  border-radius: 50px;
+  padding: 50px 0 0;
+  margin: 0px 0px 0px 30px;
+}
+.page .profile .nickname {
+  display: block;
+  font-size: 30px;
+  position: relative;
+  top: -85px;
+  left: 220px;
+  font-weight: 900;
+}
+.page .friends {
+  height: 19%;
+}
+.page .friends .friendscount {
+  font-weight: 600;
+  font-size: 20px;
+  display: block;
+  height: 18%;
+  margin: 15px 0px 10px 40px;
+}
+.page .friends .friend1 {
+  display: block;
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  background-color: #fff;
+  overflow: hidden;
+}
