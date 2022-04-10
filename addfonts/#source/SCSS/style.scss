@@ -1,0 +1,51 @@
+//шрифты
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+@font-face {
+	font-family: 'console_minecraft';
+	src: url('../fonts/minecraft.eot');
+	src: local('☺'), url('../fonts/minecraft.woff') format('woff'), url('../fonts/minecraft.ttf') format('truetype'), url('../fonts/minecraft.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Halloween';
+	src: url('../fonts/Halloween.eot');
+	src: local('☺'), url('../fonts/Halloween.woff') format('woff'), url('../fonts/Halloween.ttf') format('truetype'), url('../fonts/Halloween.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+// файл обнуляющих стлилей
+@import "nullstyle.scss";
+
+// Переменные для блоков
+$fz1:100px;
+$color1: #000;
+$color2: #fff;
+
+// Шаблоны
+
+
+// "Функции"
+
+
+// Оформление
+.textoriginal{
+    margin: 0px 0px 30px 0px;
+    font-size: 30px;
+    line-height: 35px;
+    p{margin: 0px 0px 30px 0px;}
+}
+
+.text{
+    font-family: "PT Sans";
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 35px;
+    p{margin: 0px 0px 30px 0px;}
+}
+.console-minecraft{
+    font-family: 'console_minecraft';
+    font-size: 20px;
+}
